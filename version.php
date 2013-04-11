@@ -18,12 +18,11 @@
  * XCache version information
  *
  * @package    cachestore_xcache
- * @category   cache
  * @copyright  2012 Sam Hemelryk
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 $plugin->version = 2012112700;
-$plugin->requires = 2012112700; // Moodle 2.4 1 week prior to release.
+$plugin->requires = 2012112700;
 $plugin->maturity = MATURITY_BETA;
 $plugin->component = 'cachestore_xcache';

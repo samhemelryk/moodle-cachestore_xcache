@@ -18,11 +18,17 @@
  * XCache cache store main library.
  *
  * @package    cachestore_xcache
- * @category   cache
  * @copyright  2012 Sam Hemelryk
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+/**
+ * Class cachestore_xcache
+ *
+ * @package    cachestore_xcache
+ * @copyright  2012 Sam Hemelryk
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class cachestore_xcache extends cache_store implements cache_is_configurable {
 
     /**
@@ -187,7 +193,7 @@ class cachestore_xcache extends cache_store implements cache_is_configurable {
      * @return mixed The data that was associated with the key, or false if the key did not exist.
      */
     public function get($key) {
-        // xcache_get returns null if the item doesn't exist.
+        // The function xcache_get returns null if the item doesn't exist.
         $result = xcache_get($this->prefix.$key);
         if ($result === null) {
             return false;

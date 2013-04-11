@@ -18,7 +18,6 @@
  * The add instance form for the XCache store.
  *
  * @package    cachestore_xcache
- * @category   cache
  * @copyright  2012 Sam Hemelryk
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -53,8 +52,8 @@ class cachestore_xcache_addinstance_form extends cachestore_addinstance_form {
     /**
      * Performs custom validation for us.
      *
-     * @param $data An array of data sent to the form.
-     * @param $files An array of files sent to the form.
+     * @param array $data An array of data sent to the form.
+     * @param array $files An array of files sent to the form.
      * @return array An array of errors.
      */
     protected function configuration_validation($data, $files) {
