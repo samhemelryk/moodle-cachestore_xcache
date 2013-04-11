@@ -24,5 +24,6 @@
 
 $plugin->version = 2012112700;
 $plugin->requires = 2012112700;
-$plugin->maturity = MATURITY_BETA;
+$plugin->release = 'Stable release v1.0';
+$plugin->maturity = MATURITY_STABLE;
 $plugin->component = 'cachestore_xcache';
